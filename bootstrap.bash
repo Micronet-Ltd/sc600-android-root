@@ -1,1 +1,1 @@
-/media/vladimir/github-repo/ca/build/soong/bootstrap.bash
+build/soong/bootstrap.bash
