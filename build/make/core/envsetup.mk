@@ -64,7 +64,7 @@ endef
 
 # Set up version information.
 include $(BUILD_SYSTEM)/version_defaults.mk
-
+include $(BUILD_SYSTEM)/quectelinfo.mk
 ENABLED_VERSIONS := $(call find_and_earlier,$(ALL_VERSIONS),$(TARGET_PLATFORM_VERSION))
 
 $(foreach v,$(ENABLED_VERSIONS), \

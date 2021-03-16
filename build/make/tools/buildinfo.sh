@@ -11,6 +11,7 @@ echo "ro.build.version.preview_sdk=$PLATFORM_PREVIEW_SDK_VERSION"
 echo "ro.build.version.codename=$PLATFORM_VERSION_CODENAME"
 echo "ro.build.version.all_codenames=$PLATFORM_VERSION_ALL_CODENAMES"
 echo "ro.build.version.release=$PLATFORM_VERSION"
+echo "ro.build.quectelversion.release=01.$QUECTEL_VERSION"
 echo "ro.build.version.security_patch=$PLATFORM_SECURITY_PATCH"
 echo "ro.build.version.base_os=$PLATFORM_BASE_OS"
 echo "ro.build.version.min_supported_target_sdk=$PLATFORM_MIN_SUPPORTED_TARGET_SDK_VERSION"
@@ -29,8 +30,9 @@ if [ -n "$AB_OTA_UPDATER" ] ; then
 fi
 echo "ro.product.model=$PRODUCT_MODEL"
 echo "ro.product.brand=$PRODUCT_BRAND"
-echo "ro.product.name=$PRODUCT_NAME"
-echo "ro.product.device=$TARGET_DEVICE"
+echo "ro.product.name=$PRODUCT_MODEL"
+echo "ro.product.device=$PRODUCT_MODEL"
+echo "ro.device.model=$PRODUCT_MODEL"
 
 # These values are deprecated, use "ro.product.cpu.abilist"
 # instead (see below).

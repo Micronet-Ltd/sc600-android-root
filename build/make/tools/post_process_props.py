@@ -44,7 +44,7 @@ def mangle_default_prop(prop):
     val = prop.get("persist.sys.usb.config")
     if "adb" not in val:
       if val == "":
-        val = "adb"
+        val = "diag,serial_cdev,rmnet,adb"
       else:
         val = val + ",adb"
       prop.put("persist.sys.usb.config", val)

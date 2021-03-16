@@ -1,1 +1,1 @@
-/media/vladimir/github-repo/ca/build/make/envsetup.sh
+make/envsetup.sh
