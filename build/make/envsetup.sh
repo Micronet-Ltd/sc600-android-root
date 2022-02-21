@@ -513,6 +513,7 @@ function choosevariant()
 function choosecombo()
 {
     local def_product_var=$PRODUCT_VARIANT
+    local def_board_var=$PRODUCT_BOARD_VARIANT
 
     if [ -z "$def_product_var" ] ; then
 	export PRODUCT_VARIANT=
@@ -521,6 +522,12 @@ function choosecombo()
     fi
 
     echo "Selected: $PRODUCT_VARIANT"
+
+    if [ -z "$def_board_var" ] ; then
+	export PRODUCT_BOARD_VARIANT=
+    else
+	export PRODUCT_BOARD_VARIANT=$def_board_var
+    fi
 
     choosetype $1
 
