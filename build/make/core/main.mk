@@ -79,7 +79,8 @@ ifeq ($(strip $(HAS_BUILD_NUMBER)),false)
   # it will change every time.  Pick a stable value.
   FILE_NAME_TAG := eng.$(USER)
 else
-  FILE_NAME_TAG := $(file <$(BUILD_NUMBER_FILE))
+  FILE_NAME_TAG := eng.$(USER)
+#  FILE_NAME_TAG := $(file <$(BUILD_NUMBER_FILE))
 endif
 
 # Make an empty directory, which can be used to make empty jars
